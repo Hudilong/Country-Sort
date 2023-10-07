@@ -1,0 +1,23 @@
+.app-btn {
+    background-color: transparent;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    max-width: 300px;
+    align-self: center;
+    font-size: 1rem;
+    transition: transform 0.2s;
+}
+
+.app-btn:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+.app-btn:active {
+    transform: scaleY(0.9) scaleX(0.9);
+}

@@ -1,0 +1,33 @@
+services:
+    postgres_db:
+        container_name: postgres_db
+        image: postgres:15.2
+        restart: always
+        env_file:
+            - ./server/.env
+        ports:
+            - "5432:5432"
+        volumes:
+            - postgres_db-data:/var/lib/postgresql/data
+    client:
+        container_name: client
+        build:
+            context: ./client # Path to frontend app
+            dockerfile: Dockerfile.client # Use the frontend Dockerfile
+        ports:
+            - "8080:8080"
+    server:
+        env_file:
+            - ./server/.env
+        volumes:
+            - ./src:/app/src
+        container_name: server
+        build:
+            context: ./server # Path backend app
+            dockerfile: Dockerfile.server # Use the backend Dockerfile
+        ports:
+            - "3000:3000"
+        depends_on:
+            - postgres_db
+volumes:
+    postgres_db-data: {}

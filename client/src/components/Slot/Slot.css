@@ -1,0 +1,23 @@
+.slot {
+    border-color: rgba(255, 255, 255, 0.3);
+    border-width: 2px;
+    border-style: dashed;
+    width: 10em;
+    height: 10em;
+    border-radius: 7px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#slot-text {
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+@media only screen and (max-width: 1280) and (max-width: 1650) {
+    .slot {
+        width: 8em;
+        height: 8em;
+    }
+}

@@ -1,0 +1,44 @@
+#input {
+    display: block;
+    height: 2.5rem;
+    background-color: transparent;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: 0.4s;
+}
+
+#input:focus {
+    outline: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+#input:autofill {
+    background-color: transparent;
+}
+
+#input:-webkit-autofill {
+    background-color: transparent;
+    color: white;
+}
+
+.score-form {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.score-text {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.loader-wrapper {
+    height: 3rem;
+}

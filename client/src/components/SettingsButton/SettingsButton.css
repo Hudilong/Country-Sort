@@ -1,0 +1,14 @@
+.settings-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: transparent;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    border: none;
+    transition: transform 0.2s;
+    padding: 0.2rem;
+}
+
+.settings-icon:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}

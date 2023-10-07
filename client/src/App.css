@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Roboto&display=swap");
+
+html {
+    background-image: url(./assets/images/arcades.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 98dvh;
+    height: 98dvh;
+    font-size: 0.9vw;
+    font-family: "Bungee Spice", cursive;
+    font-family: "Roboto", sans-serif;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    max-width: 1720px;
+    justify-content: space-around;
+    align-items: center;
+    height: 98dvh;
+    width: 100%;
+}
+
+.invisible {
+    opacity: 0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6px);
+    border-radius: 1rem;
+    height: 75dvh;
+    padding: 1rem;
+    transition: 1.5s;
+}

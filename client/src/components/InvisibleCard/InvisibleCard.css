@@ -1,0 +1,7 @@
+.invisible-card {
+    width: 10em;
+    height: 10em;
+    border-width: 2px;
+    border-color: transparent;
+    border-style: dashed;
+}

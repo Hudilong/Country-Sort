@@ -1,0 +1,14 @@
+.remove-button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    cursor: pointer;
+}
+.remove-icon {
+    object-fit: contain;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 1rem;
+    width: 1rem;
+    border-radius: 5px;
+    padding: 0.25rem;
+}

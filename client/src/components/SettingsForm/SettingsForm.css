@@ -1,0 +1,19 @@
+#setting-form {
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn-row {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+}
