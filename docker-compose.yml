@@ -19,8 +19,6 @@ services:
     server:
         env_file:
             - ./server/.env
-        volumes:
-            - ./src:/app/src
         container_name: server
         build:
             context: ./server # Path backend app
