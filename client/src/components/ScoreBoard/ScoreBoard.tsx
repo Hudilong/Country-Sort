@@ -7,20 +7,21 @@ import "./ScoreBoard.css";
 
 export default function ScoreBoard() {
     const context = useGameContext();
+    const [isLoading, setIsLoading] = useState(false);
     const [highScores, setHighscores] = useState<Score[] | undefined>(
         undefined
     );
 
     useEffect(() => {
+        setIsLoading(true);
         context?.gameSettings !== undefined &&
             loadHighScores(context.gameSettings.type);
+        setIsLoading(false);
     }, [context?.gameSettings, context?.gameState.isGameOngoing]);
 
     async function loadHighScores(gameType: GameType) {
         try {
-            const response = await fetch(
-                `${import.meta.env.VITE_SERVER_URL}/scores`
-            );
+            const response = await fetch(`http://localhost:3000/scores`);
             const data = await response.json();
             const serverScores = data.filter(
                 (score: ServerScore) => score.game_type === gameType
@@ -46,7 +47,7 @@ export default function ScoreBoard() {
         >
             <h2>High Scores</h2>
             <h3>By: {context?.gameSettings?.type.toUpperCase()}</h3>
-            {highScores ? (
+            {!isLoading ? (
                 <ol id="list">
                     {highScores?.map((score, index) => (
                         <ScoreItem
