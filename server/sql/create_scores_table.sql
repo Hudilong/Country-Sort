@@ -1,4 +1,4 @@
-CREATE TABLE scores (
+CREATE TABLE IF NOT EXISTS scores (
     id SERIAL PRIMARY KEY,
     player VARCHAR(255) NOT NULL,
     score INTEGER NOT NULL,
