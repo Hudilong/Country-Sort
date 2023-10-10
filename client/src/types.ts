@@ -31,7 +31,7 @@ export type GameSettings = {
     difficulty: GameDifficulty;
 };
 
-export type GameType = "name" | "area" | "population";
+export type GameType = "alphabetical" | "area" | "population";
 
 export type GameDifficulty = "easy" | "medium" | "hard";
 

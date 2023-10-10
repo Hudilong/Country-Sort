@@ -21,7 +21,7 @@ export default function SlotRow() {
                         <CountryCard
                             id={country.id}
                             name={
-                                context?.gameSettings?.type !== "name"
+                                context?.gameSettings?.type !== "alphabetical"
                                     ? country.name
                                     : ""
                             }

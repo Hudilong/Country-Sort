@@ -188,13 +188,23 @@ export default function useGameLogic() {
     //If game type is by name, the sorting is opposite
     function sortCountriesBy(type: GameType) {
         const orderedCountries = [...inGameCountries].sort(function (a, b) {
-            if (a[type] < b[type]) {
-                return type === "name" ? -1 : 1;
+            if(type === 'alphabetical') {
+                if (a.name < b.name) {
+                    return -1;
+                }
+                if (a.name > b.name) {
+                    return 1;
+                }
+                return 0;
+            } else {
+                if (a[type] < b[type]) {
+                    return 1;
+                }
+                if (a[type] > b[type]) {
+                    return -1;
+                }
+                return 0;
             }
-            if (a[type] > b[type]) {
-                return type === "name" ? 1 : -1;
-            }
-            return 0;
         });
         setSolution(orderedCountries);
     }

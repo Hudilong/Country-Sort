@@ -46,7 +46,7 @@ export default function ScoreBoard() {
             }`}
         >
             <h2>High Scores</h2>
-            <h3>By: {context?.gameSettings?.type.toUpperCase()}</h3>
+            <h3>Sort Criteria: {context?.gameSettings?.type.toUpperCase()}</h3>
             {!isLoading ? (
                 <ol id="list">
                     {highScores?.map((score, index) => (

@@ -17,7 +17,7 @@ export default function SettingsForm() {
         } else if (
             button === "area" ||
             button === "population" ||
-            button === "name"
+            button === "alphabetical"
         ) {
             setSettings({
                 ...settings!,
@@ -83,10 +83,10 @@ export default function SettingsForm() {
                     }
                 />
                 <AppButton
-                    label="Name"
-                    onClick={() => updateSettings("name")}
+                    label="Alphabetical"
+                    onClick={() => updateSettings("alphabetical")}
                     style={
-                        settings?.type === "name"
+                        settings?.type === "alphabetical"
                             ? { backgroundColor: "rgba(255, 255, 255, 0.1)" }
                             : {}
                     }

@@ -22,7 +22,7 @@ export default function GameSettings() {
             </div>
 
             <div>
-                <p>Sort by:</p>
+                <p>Sort Criteria:</p>
                 <p>{context?.gameSettings?.type.toUpperCase()}</p>
                 <p>Difficulty:</p>
                 <p>{context?.gameSettings?.difficulty.toUpperCase()}</p>
