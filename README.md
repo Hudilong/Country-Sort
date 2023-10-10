@@ -1,5 +1,7 @@
 # Country Sort
 
+![Screenshot of the client](https://i.imgur.com/QdnwLTk.png)
+
 ## Overview
 
 This web application is a drag and drop game built using React (with Vite), a Node.js server, and a PostgreSQL database. The game utilizes the REST Countries API to fetch information about countries and their flags. The objective of the game is to arrange the flags in the correct order based on selected criteria (alphabetical, descending population, or descending area).
