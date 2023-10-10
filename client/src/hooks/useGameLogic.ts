@@ -136,6 +136,7 @@ export default function useGameLogic() {
                 ...gameState,
                 score: gameState.score + pointsEarned,
                 round: gameState.round + 1,
+                triesLeft: 3,
                 roundTime: 0,
             });
             resetPlayerAnswer();
