@@ -4,7 +4,7 @@
 
 ## Overview
 
-This web application is a drag and drop game built using React (with Vite), a Node.js server, and a PostgreSQL database. The game utilizes the REST Countries API to fetch information about countries and their flags. The objective of the game is to arrange the flags in the correct order based on selected criteria (alphabetical, descending population, or descending area).
+This web application is a drag and drop game built using React (with Vite), a Node.js server, and a PostgreSQL database. The game utilizes the RESTCountries API to fetch information about countries and their flags. The objective of the game is to arrange the flags in the correct order based on selected criteria (alphabetical, descending population, or descending area).
 
 ## Features
 
@@ -16,7 +16,7 @@ This web application is a drag and drop game built using React (with Vite), a No
 ## Technologies Used
 
 -   **Frontend**: React (with Vite), DND Kit for drag and drop functionality.
--   **Backend**: Node.js server.
+-   **Backend**: Node.js server using Express.
 -   **Database**: PostgreSQL.
 
 ## Getting Started
@@ -39,7 +39,7 @@ git clone https://github.com/hudilong/country-sort.git
 cd country-sort
 ```
 
-3. Create a .env file in the server directory and set following variables:
+3. Create an .env file in the server directory and set following variables:
 
 -   POSTGRES_USER: Username for postres. Should usually reflect the role of the user.
 -   POSTGRES_DB: The database name
