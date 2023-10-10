@@ -41,11 +41,11 @@ cd country-sort
 
 3. Create a .env file in the server directory and set following variables:
 
-POSTGRES_USER       Username for postres. Should usually reflect the role of the user.
-POSTGRES_DB         The database name
-POSTGRES_PASSWORD   A secure password for your postgres user
-PG_HOST             Has to be the same as the countainer_name in the docker-compose.yml file (currentyl 'postgres_db')
-PORT                Has to be the same as the exposed server port in the /server/dockerfile.server (currently 3000)
+-   POSTGRES_USER: Username for postres. Should usually reflect the role of the user.
+-   POSTGRES_DB: The database name
+-   POSTGRES_PASSWORD: A secure password for your postgres user
+-   PG_HOST: Has to be the same as the countainer_name in the docker-compose.yml file (currentyl 'postgres_db')
+-   PORT: Has to be the same as the exposed server port in the /server/dockerfile.server (currently 3000)
 
 4. Start the project using Docker:
 
