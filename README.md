@@ -34,7 +34,7 @@ git clone https://github.com/hudilong/country-sort.git
 2. Navigate to the project directory:
 
 ```bash
-cd country sort
+cd country-sort
 ```
 
 3. Start the project using Docker:
