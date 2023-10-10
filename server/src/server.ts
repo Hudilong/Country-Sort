@@ -26,13 +26,27 @@ const createScoresTableQuery = fs.readFileSync(
 );
 
 // Execute the query
-pool.query(createScoresTableQuery, (err, res) => {
-    if (err) {
-        console.error("Error executing query", err);
-    } else {
-        console.log("Table created successfully");
-    }
-});
+const maxRetries = 5;
+let retries = 0;
+
+function createScoresTable() {
+    pool.query(createScoresTableQuery, (err, res) => {
+        if (err) {
+            console.error("Error executing query", err);
+            if (retries < maxRetries) {
+                retries++;
+                console.log(`Retrying in 5 seconds... (Attempt ${retries}/${maxRetries})`);
+                setTimeout(createScoresTable, 5000); // Retry after 5 seconds
+            } else {
+                console.error(`Max retries reached (${maxRetries}), unable to create table.`);
+            }
+        } else {
+            console.log("Table created successfully");
+        }
+    });
+}
+
+createScoresTable();
 
 app.get("/scores", async (req, res) => {
     try {
