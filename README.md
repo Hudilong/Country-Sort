@@ -1,4 +1,4 @@
-# Drag and Drop Flags Game
+# Country Sort
 
 ## Overview
 
@@ -28,13 +28,13 @@ This web application is a drag and drop game built using React (with Vite), a No
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/drag-and-drop-flags-game.git
+git clone https://github.com/hudilong/country-sort.git
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-cd drag-and-drop-flags-game
+cd country sort
 ```
 
 3. Start the project using Docker:
@@ -45,28 +45,14 @@ docker-compose up --build
 
 ## Usage
 
-1. Open a web browser and navigate to [http://localhost:3000](http://localhost:3000).
-2. Play the game by dragging and dropping flags to arrange them in the correct order.
-3. Select the sorting criteria (alphabetical, population, area) from the options.
+1. Open a web browser and navigate to [http://localhost:8080](http://localhost:8080).
+2. Select the difficulty and sorting criteria (alphabetical, population, area) from the options.
+3. Play the game by dragging and dropping flags to arrange them in the correct order.
 4. View highscores and track your progress.
 
 ## Docker Configuration
 
 Both the client and server components are Dockerized for easy deployment. The `docker-compose.yml` file contains configurations for running the entire application.
-
-### Custom Docker Configurations (if any)
-
-If there are any additional configurations specific to your Docker setup, please make sure to include them here.
-
-## Contributing
-
-If you'd like to contribute to this project, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature or fix: `git checkout -b feature-name`.
-3. Make your changes and commit them: `git commit -m 'Description of your changes'`.
-4. Push to the branch: `git push origin feature-name`.
-5. Open a pull request on GitHub.
 
 ## License
 
